@@ -13,6 +13,7 @@ pipeline {
           steps {
             sh '''#!/bin/bash
 
+whoami
 /root/env3/bin/python -m rich.progress'''
             sh 'echo "step1-1"'
           }
