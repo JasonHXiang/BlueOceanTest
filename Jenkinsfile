@@ -13,8 +13,7 @@ pipeline {
           steps {
             sh '''#!/bin/bash
 
-source /root/env3/bin/activate
-python -m rich.progress'''
+/root/env3/bin/python -m rich.progress'''
             sh 'echo "step1-1"'
           }
         }
