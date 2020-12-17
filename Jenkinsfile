@@ -11,8 +11,9 @@ pipeline {
 
         stage('jasonStep1') {
           steps {
-            sh '''sleep 20s
-echo "step1"'''
+            sh '''cd /root/env3/
+source bin/activate
+python -m rich.progress'''
             sh 'echo "step1-1"'
           }
         }
