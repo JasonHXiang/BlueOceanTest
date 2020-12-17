@@ -11,8 +11,9 @@ pipeline {
 
         stage('jasonStep1') {
           steps {
-            sh '''cd /root/env3/
-source bin/activate
+            sh '''#!/bin/bash
+
+source /root/env3/bin/activate
 python -m rich.progress'''
             sh 'echo "step1-1"'
           }
